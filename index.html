@@ -36,8 +36,8 @@
   <!-- ....... -->
 
     <!-- main body -->
-    <h3>HAPPY NEW YEAR 2022 :)</h3>
-      <img src = "./tree.svg" alt="My Happy SVG"/>
+    <h3 onclick="tadaFunction()">HAPPY NEW YEAR 2022 :)</h3>  
+    <img onclick="tadaFunction()" src = "./tree.svg" alt="My Happy SVG"/>
     <p>hi there. how are you?</p>
 
      
@@ -64,23 +64,26 @@
       <span></span>
       <span></span>
       <span></span>Ok. lets see. count me in</a></button>
+
+
     <button id="button2_1" style="display: none;" onclick="exitWindow()"><a href ="#">
       <span></span>
       <span></span>
-      <span></span>No. I don't like it </a></button>
+      <span></span>No. I don't like it. plus I am busy with the shift.</a></button>
 
 
     <p id="para3"></p>
     <button id="button3" style="display: none;" onclick="typeWriter4()"><a href ="#">
       <span></span>
       <span></span>
-      <span></span>haa bawa I am fine. Look I am smiling :) plus I am little excited for the new deacade.</a></button>
+      <span></span>haa bawa I am fine. Look I am smiling :) plus I am <del>little</del> very excited for the new year.</a></button>
 
     <p id="para4"></p>
-    <button id="button4" style="display: none;" onclick="typeWriter5()"><a href ="#">
+    <button id="button4" style="display: none;" onclick="typeWriter5()"><a href ="#tweety">
       <span></span>
       <span></span>
-      <span></span>yes kind of! 2020 was fun indeed.</a></button>
+      <img class="displayBlock" src = "./eyeRoll.gif" id="tweety" alt="My Happy eyeRoll"/>
+      <span></span>you are...</a></button>
 
     <p id="para5"></p>
     <button id="button5" style="display: none;" onclick="typeWriter6()"><a href ="#">
@@ -114,10 +117,12 @@
 
 
     <p id="para7"></p>
+    <div class="mount"></div>
     <button id="button7" style="display: none;" onclick="typeWriter8()"><a href ="#">
       <span></span>
       <span></span>
-      <span></span>it was okay type</a></button>
+    
+      <span></span>it was okay type. And I have to rush out. BYE HAA</a></button>
 
       <p id="para8"></p>
 
@@ -125,7 +130,7 @@
     <button id="buttonGift" style="display: none;" ><a href ="./yourGift.html">
       <span></span>
       <span></span>
-      <span></span>Where is my gift?</a></button>
+      <span></span>And where is my gift?</a></button>
 
 
 
@@ -133,7 +138,7 @@
   </div>
 
 <script>
-var speed = 80;
+var speed = 0;
 var sound = document.getElementById("myAudio");
 
 // exit function
@@ -151,33 +156,32 @@ function exitWindow(){
 
 // text here
 var i = 0;
-var txt = `happy to hear that, you are having good days. And I hope you keep smiling. Are you confused about "what is happening right here?" `;
+var txt = `happy to hear that you are having good days. Are you confused about "what is happening right here?" `;
 
 var i1 = 0;
-var txt1 = 'well calm down! I was just having my leisure hours. In between, I felt to know that we are about to start a new decade. So I just thought I should wish you a "HAPPY NEW YEAR". And this is what I found unique so far. I hope you like it?';
+var txt1 = `well, calm down! you are already familiar with this layout. See another new year is started. I know this is the cliche tag line but "ye saal kasise khatam ho gaya pata hi nahi chala, (he naa)" I could not miss the opportunity to wish you the best in the world on this beautiful day and so here we are. I don't know if you like this method of wishing new year` 
 
 var i2 = 0;
-var txt2= `yeah! I know it is weird indeed. let's stick with it naa. just a little`;
+var txt2= `yeah! I know it is still weird. but you know, coding is in the blood :) let's stick with it naa. just a little...`;
 
 var i3 = 0;
-var txt3= `you are not terminating the session... routing you onboard... so again are you fine naa. I mean obviously, a new year with tons of excitement is finally hitting at the door. `;
+var txt3= `you are not ending the session... welcome onboard... so again are you fine naa. I mean obviously, a new year with tons of excitement is finally hitting the door. `;
 
 var i4 = 0;
-var txt4 = `Cool... to be honest, I am also excited for the new year. even though I am not gonna resolute anything as I used to do till last years. because I have begun to understand that "resolution" Is just a one-day thing. we both know that it is just not that easy or realistic. events do change with time, and I find it terrifying. we can't preplan the future although we can try to make it even better than it was before. Still, I have to accept that the year 2020 was priceless. It was a great lesson for humanity and to me, it was unusual * Do I have to explain? ... you know that, right! *`
+var txt4 = `Cool... to be honest, I am also excited for the new year.  I reminisce on all of the great things that you have brought me. Thank you for such an amazing friendship, endless love, and support. I am so grateful to have had you by my side through thick and thin and I can’t wait for what is to come in the New Year.`
 
 var i5 = 0;
-var txt5 =`I want you to take a long breath, forget everything, a cute smile, amazing vibes, and click a picture of you. save it to secure data storage. Let us see if we actually live year by year.
-could you please do that?`
+var txt5 =`I want you to take a long breath, forget everything, a cute smile, amazing vibes, and think about something that makes you... *YOU* 
+see, there is a struggle, there is pain, and there is life. `
 
 var i6 = 0;
-var txt6 = `Ok fine. I don't know if you still remember... We used to share machine-made new year greeting cards in our school. I mean it was like an untold culture that constrains us to share cards before we all left for winter vacation.
-*so here I made a kind of hand-made card for you but in the form of 0 and 1 (s) *`
+var txt6 = `Ok fine. you might remember... That kinda hand-made card you witness earlier. NO? `
 
 var i7 = 0;
 var txt7 = `Don't laugh haa *unfair* `
 
 var i8 = 0;
-var txt8 = `I hope everything has fulfilled that  I have programmed.  Happy new year 2021 my dear!`
+var txt8 = `I hope everything has fulfilled that I have programmed.  Happy new year 2022 my dear!`
 
 
 // function here
@@ -307,6 +311,105 @@ function typeWriter7() {
   }
 }
 
+function tadaFunction (){
+  // Dom confetti by Daniel Lundin (https://github.com/daniel-lundin/dom-confetti)
+  const colors = [
+    '#a864fd',
+    '#29cdff',
+    '#78ff44',
+    '#ff718d',
+    '#fdff6a'
+  ];
+
+  function createElements(root, elementCount) {
+    return Array
+      .from({ length: elementCount })
+      .map((_, index) => {
+        const element = document.createElement('div');
+        element.classList = ['fetti'];
+        const color = colors[index % colors.length];
+        element.style['background-color']= color; // eslint-disable-line space-infix-ops
+        element.style.width = '10px';
+        element.style.height = '10px';
+        element.style.position = 'absolute';
+        root.appendChild(element);
+        return element;
+      });
+  }
+
+  function randomPhysics(angle, spread, startVelocity) {
+    const radAngle = angle * (Math.PI / 180);
+    const radSpread = spread * (Math.PI / 180);
+    return {
+      x: 0,
+      y: 0,
+      wobble: Math.random() * 10,
+      velocity: (startVelocity * 0.5) + (Math.random() * startVelocity),
+      angle2D: -radAngle + ((0.5 * radSpread) - (Math.random() * radSpread)),
+      angle3D: -(Math.PI / 4) + (Math.random() * (Math.PI / 2)),
+      tiltAngle: Math.random() * Math.PI
+    };
+  }
+
+  function updateFetti(fetti, progress, decay) {
+    /* eslint-disable no-param-reassign */
+    fetti.physics.x += Math.cos(fetti.physics.angle2D) * fetti.physics.velocity;
+    fetti.physics.y += Math.sin(fetti.physics.angle2D) * fetti.physics.velocity;
+    fetti.physics.z += Math.sin(fetti.physics.angle3D) * fetti.physics.velocity;
+    fetti.physics.wobble += 0.1;
+    fetti.physics.velocity *= decay;
+    fetti.physics.y += 3;
+    fetti.physics.tiltAngle += 0.1;
+
+    const { x, y, tiltAngle, wobble } = fetti.physics;
+    const wobbleX = x + (10 * Math.cos(wobble));
+    const wobbleY = y + (10 * Math.sin(wobble));
+    const transform = `translate3d(${wobbleX}px, ${wobbleY}px, 0) rotate3d(1, 1, 1, ${tiltAngle}rad)`;
+
+    fetti.element.style.transform = transform;
+    fetti.element.style.opacity = 1 - progress;
+
+    /* eslint-enable */
+  }
+
+  function animate(root, fettis, decay) {
+    const totalTicks = 200;
+    let tick = 0;
+
+    function update() {
+      fettis.forEach((fetti) => updateFetti(fetti, tick / totalTicks, decay));
+
+      tick += 1;
+      if (tick < totalTicks) {
+        requestAnimationFrame(update);
+      } else {
+        fettis.forEach((fetti) => root.removeChild(fetti.element));
+      }
+    }
+
+    requestAnimationFrame(update);
+  }
+
+  function confetti(root, {
+      angle = 90,
+      decay = 0.9,
+      spread = 45,
+      startVelocity = 45,
+      elementCount = 50
+    } = {}) {
+    const elements = createElements(root, elementCount);
+    const fettis = elements.map((element) => ({
+      element,
+      physics: randomPhysics(angle, spread, startVelocity)
+    }));
+
+    animate(root, fettis, decay);
+  }
+
+  const mount = document.querySelector('.mount')
+  confetti(mount)
+  }
+
 function typeWriter8() {
   sound.play()
   if (i8 < txt8.length) {
@@ -316,6 +419,7 @@ function typeWriter8() {
     setTimeout(typeWriter8, speed);
   }
   if (i8 == txt8.length){
+  tadaFunction()
     sound.pause()
     $(document).scrollTop($(document).height());
     document.getElementById("buttonGift").style = `display: "block"`
@@ -345,13 +449,93 @@ const max = 100;
 let anim = setInterval(() => {
   if (value == max) {
     clearInterval(anim);
+  tadaFunction()
     progressDiv.style.display = "none";
   } else {
     value += 1;
     progressBar.value = value;
   }
-},30);
+},0);
 
+
+// tada effect
+// Dom confetti by Daniel Lundin (https://github.com/daniel-lundin/dom-confetti)
+const colors = [
+  '#a864fd',
+  '#29cdff',
+  '#78ff44',
+  '#ff718d',
+  '#fdff6a'
+];
+
+function createElements(root, elementCount) {
+  return Array
+    .from({ length: elementCount })
+    .map((_, index) => {
+      const element = document.createElement('div');
+      element.classList = ['fetti'];
+      const color = colors[index % colors.length];
+      element.style['background-color']= color; // eslint-disable-line space-infix-ops
+      element.style.width = '10px';
+      element.style.height = '10px';
+      element.style.position = 'absolute';
+      root.appendChild(element);
+      return element;
+    });
+}
+
+function randomPhysics(angle, spread, startVelocity) {
+  const radAngle = angle * (Math.PI / 180);
+  const radSpread = spread * (Math.PI / 180);
+  return {
+    x: 0,
+    y: 0,
+    wobble: Math.random() * 10,
+    velocity: (startVelocity * 0.5) + (Math.random() * startVelocity),
+    angle2D: -radAngle + ((0.5 * radSpread) - (Math.random() * radSpread)),
+    angle3D: -(Math.PI / 4) + (Math.random() * (Math.PI / 2)),
+    tiltAngle: Math.random() * Math.PI
+  };
+}
+
+function updateFetti(fetti, progress, decay) {
+  /* eslint-disable no-param-reassign */
+  fetti.physics.x += Math.cos(fetti.physics.angle2D) * fetti.physics.velocity;
+  fetti.physics.y += Math.sin(fetti.physics.angle2D) * fetti.physics.velocity;
+  fetti.physics.z += Math.sin(fetti.physics.angle3D) * fetti.physics.velocity;
+  fetti.physics.wobble += 0.1;
+  fetti.physics.velocity *= decay;
+  fetti.physics.y += 3;
+  fetti.physics.tiltAngle += 0.1;
+
+  const { x, y, tiltAngle, wobble } = fetti.physics;
+  const wobbleX = x + (10 * Math.cos(wobble));
+  const wobbleY = y + (10 * Math.sin(wobble));
+  const transform = `translate3d(${wobbleX}px, ${wobbleY}px, 0) rotate3d(1, 1, 1, ${tiltAngle}rad)`;
+
+  fetti.element.style.transform = transform;
+  fetti.element.style.opacity = 1 - progress;
+
+  /* eslint-enable */
+}
+
+function animate(root, fettis, decay) {
+  const totalTicks = 200;
+  let tick = 0;
+
+  function update() {
+    fettis.forEach((fetti) => updateFetti(fetti, tick / totalTicks, decay));
+
+    tick += 1;
+    if (tick < totalTicks) {
+      requestAnimationFrame(update);
+    } else {
+      fettis.forEach((fetti) => root.removeChild(fetti.element));
+    }
+  }
+
+  requestAnimationFrame(update);
+}
 
 </script>
 
