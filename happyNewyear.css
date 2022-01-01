@@ -20,6 +20,10 @@ img {
   width: 150px;
 }
 
+#wish_card2{
+  display: block;
+}
+
 body::-webkit-scrollbar {
   display: none;
 }
@@ -38,8 +42,12 @@ button {
 }
 
 .displayBlock {
-  display: block;
-  width: 203px;
+ 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+
 }
 
 /* click effect */

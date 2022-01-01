@@ -100,9 +100,7 @@
 
 
     <!-- wish card  -->
-    <div class='
-    
-    ' id="wish_card" style="display: none;">
+    <div class='' id="wish_card" style="display: none;">
       <div class='card' >
           <div class='front face' >
               <img src='./mainCard.png'/>
@@ -115,13 +113,17 @@
   </br>
   <!-- end wish card -->
 
+   <div id="wish_card2" style="display: none;">
+      <img class="displayBlock" src='./insideOUT.gif'/>
+      <p>Make the perfect balance of all your  EMOTIONS.</p>
+    </div>
+
 
     <p id="para7"></p>
     <div class="mount"></div>
     <button id="button7" style="display: none;" onclick="typeWriter8()"><a href ="#">
       <span></span>
       <span></span>
-    
       <span></span>it was okay type. And I have to rush out. BYE HAA</a></button>
 
       <p id="para8"></p>
@@ -138,7 +140,7 @@
   </div>
 
 <script>
-var speed = 0;
+var speed = 60;
 var sound = document.getElementById("myAudio");
 
 // exit function
@@ -306,6 +308,8 @@ function typeWriter7() {
     $(document).scrollTop($(document).height());
     document.getElementById("button7").style = `display: "block"`
     document.getElementById("wish_card").style = `display: "block"`
+    document.getElementById("wish_card2").style = `display: "block"`
+
 
 
   }
